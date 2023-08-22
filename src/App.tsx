@@ -109,7 +109,7 @@ function App() {
             ...tasks,
             [todolistId]: {
                 ...tasks[todolistId],
-                data: [...tasks[todolistId].data, newTask]
+                data: [newTask, ...tasks[todolistId].data, ]
             }
         })
         // let newTasks = [task, ...tasks];
